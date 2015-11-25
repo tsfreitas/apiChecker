@@ -20,7 +20,7 @@
 				<h3>API VERSION:</h3>
 			</div>
 			<div class="col-md-6">
-				<button class="btn btn-success btn-lg btn-block">
+				<button id="btn-api" class="btn btn-success btn-lg btn-block">
 					${api_tag} <span class="glyphicon glyphicon-ok"></span>
 				</button>
 			</div>
@@ -37,7 +37,7 @@
 				<h3>LIB VERSION:</h3>
 			</div>
 			<div class="col-md-6">
-				<button class="btn btn-success btn-lg btn-block">
+				<button id="btn-lib" class="btn btn-success btn-lg btn-block">
 					${lib_tag} <span class="glyphicon glyphicon-ok"></span>
 				</button>
 			</div>
@@ -59,4 +59,14 @@
 		</div>
 	</div>
 </body>
+
+<script src="/js/jquery-2.1.4.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		<!-- Fazer troca de botões quando receber a flag do servidor -->
+		$("#btn-lib").addClass("oi-mundo")
+	});
+</script>
+
+
 </html>
